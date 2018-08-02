@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\inetpub\wwwroot\codedeploy-test
+hooks:
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 900
